@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.slide{
+    width: 533px;
+    height: 300px;
+    border:1px solid #000;
+    position:relative;
+    margin:50px auto;
+    overflow:hidden;
+}
+.olist{
+    position:absolute;
+    bottom:20px;
+    left:32%;
+}
+.olist li{
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    text-align:center;
+    background:pink;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    float:left;
+    border-radius:50%;
+    margin-right:10px;
+    cursor: pointer;
+}
+.olist li.active{
+    background:skyblue;
+    color:pink;
+}
+span{
+    position:absolute;
+    top:50%;
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    background:#ccc;
+    cursor: pointer;
+    display:none;
+}
+#left{
+    left:0;
+}
+#right{
+    right:0;
+}

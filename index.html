@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+</head>
+<body>
+    <div id="app">
+        <slide :message="style1"></slide>
+    </div>
+    <template id="slide">
+        <div class="slide" @mouseenter="stop1" @mouseleave="show">
+            <ul class="list">
+                <li v-for="data1 in src"><img v-bind:src="data1" alt=""></li>
+            </ul>
+            <ol class="olist">
+                <li v-for="(index,sli) in sort" @click="change(index)">{{sli}}</li>
+            </ol>
+            <span id="left" @click="prev">{{left}}</span>
+            <span id="right" @click="next">{{right}}</span>
+        </div>
+        {{autoplay1}}
+    </template>
+</body>
+</html>
